@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "first-task"
+version = "0.1.0"
+description = ""
+authors = ["Артур Билалов"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10"
+ruff = "0.3.5"
+isort = "5.12.0"
+flake8 = "7.0.0"
+black = "24.3.0"
+pre-commit = "3.7.0"
+torch = { version = "2.0.0", source = "torch-cpu" }
+torchvision = { version = "0.15.1", source = "torch-cpu" }
+
+[[tool.poetry.source]]
+name = "torch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+[[tool.poetry.source]]
+name = "torch-cuda-12-3"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[tool.isort]
+profile = "alphabetical"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
