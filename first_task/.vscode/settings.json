@@ -1,0 +1,42 @@
+{
+    "python.analysis.typeCheckingMode": "off",
+    "python.analysis.diagnosticMode": "openFilesOnly",
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.importFormat": "absolute",
+    "python.analysis.enablePytestSupport": true,
+    "python.analysis.indexing": true,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+
+    "editor.acceptSuggestionOnCommitCharacter": true,
+
+    "editor.acceptSuggestionOnEnter": "on",
+
+    "editor.quickSuggestionsDelay": 10,
+
+    "editor.suggestOnTriggerCharacters": true,
+
+    "editor.tabCompletion": "off",
+
+    "editor.suggest.localityBonus": true,
+
+    "editor.suggestSelection": "first",
+
+    "editor.parameterHints.enabled": true,
+    
+}
